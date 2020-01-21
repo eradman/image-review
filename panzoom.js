@@ -127,7 +127,7 @@ function newFrame(img, x, y, k) {
       .attr("y",  "25px")
       .attr("class", "button")
       .text("⇲")
-      .on("click", function(d,i){  toggle_visibility(control_area) } );
+      .on("click", () => toggle_visibility(control_area) );
 
   var t = d3.zoomIdentity.translate(x, y).scale(k);
 
@@ -144,7 +144,7 @@ window.onload = function (e) {
     if (evt.preventDefault) {
         imgs = document.getElementsByTagName('image');
         for (i = 0; i < imgs.length; i++) {
-            imgs[i].onmousedown = function (e) { e.preventDefault(); }
+            imgs[i].onmousedown = (e) => e.preventDefault();
         }
     }
 };
