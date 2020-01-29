@@ -1,15 +1,9 @@
-/*
- * 2019 Eric Radman <ericshane@eradman.com>
- */
-
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #fefef7;
-}
+/* panzoom.js */
 
 svg {
   clear: both;
+  width: unset;
+  max-width: unset;
 }
 
 rect.side {
